@@ -22,10 +22,7 @@
     --logo-color: #ffffff;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
-}
+
 
 body {
     background: var(--bg-color);
@@ -54,6 +51,14 @@ body {
     padding: 1rem;
 }
 
+@media (max-width: 768px) {
+    .container-70 {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+}
+
 .d-flex {
     display: flex;
 }
@@ -62,6 +67,13 @@ nav {
     justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
 
 /* colours */
 
@@ -90,6 +102,22 @@ nav {
 
 /* Navigation / Lists */
 
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
 nav li {
     color: var(--nav-text);
     border: 1px solid transparent;
@@ -103,6 +131,16 @@ nav li {
     /* margin-top: 1rem;  */
 }
 
+@media (max-width: 768px) {
+    nav li {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
 nav li:last-child {
     background-color: var(--btn-primary-bg); 
     color: var(--btn-text);
@@ -114,6 +152,13 @@ nav li:last-child {
     font-size: 1.1rem;
     font-weight: 400;
     /* margin-top: 1rem;  */
+}
+
+@media (max-width: 768px) {
+    nav li:last-child  {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
 
 nav li:hover {
