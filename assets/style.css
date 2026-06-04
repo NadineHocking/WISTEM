@@ -1,5 +1,5 @@
 :root {
-    --primary-bg: #000000;
+    --primary-bg: #324cdc;
     --secondary-bg: #080808;
     --btn-primary-outline-bg: 1px solid #000000;
     --btn-primary-bg:#ffffff;
@@ -16,4 +16,55 @@
     --box-text:  #ffffff;
     --footer-bg: :rgba(255, 255, 255, 0.3);
     --logo-color: #ffffff;
+}
+
+/* Containers and alignment */
+
+.container-100 {
+    position: relative;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container-70 {
+    position: relative;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* colours */
+
+.primary-bg {
+    background-color: var(--primary-bg);
+}
+
+/* images / icons */
+
+.logo {
+    fill: var(--logo-color);
+}
+
+/* Video */
+
+.hero {
+    /* display: flex; */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero-overlay {
+    z-index: 1;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    inset: 0px;
 }
