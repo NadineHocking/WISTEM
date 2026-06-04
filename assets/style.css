@@ -59,6 +59,21 @@ body {
     }
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 .d-flex {
     display: flex;
 }
