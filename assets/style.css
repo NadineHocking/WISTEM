@@ -2,16 +2,16 @@
 
 :root {
     --primary-bg: #324cdc;
-    --secondary-bg: #080808;
+    --secondary-bg: #fffffff;
     --btn-primary-outline-bg: 1px solid #ffffff;
     --btn-primary-bg:#ffffff;
+    --btn-primary-outline-text: #ffffff;
+    --btn-primary-outline-text-hover: #324cdc;
     --btn-text:#324cdc;
     --btn-text-hover:#324cdc;
-    /* --btn-text-hover:rgba(255, 255, 255, 0.3); */
-
     --btn-bg-hover: rgba(255, 255, 255, 0.9);
     --nav-text: #ffffff;
-    --nav-text-hover: #000000;
+    --nav-text-hover: #324cdc;
     --nav-btn-hover: #ffffff;
     --footer-text: #ffffff;
     --text-color: #ffffff;
@@ -25,7 +25,9 @@
     --logo-color: #ffffff;
 }
 
+.light-page {
 
+}
 
 body {
     background: var(--bg-color);
@@ -404,7 +406,7 @@ nav {
     /* border: 1px solid transparent; */
     /* margin-left: 1rem; */
     /* border-radius: 50px; */
-    padding: 10px 14px;
+    /* padding: 10px 14px; */
     text-decoration: none !important;
     list-style: none;
     /* font-size: 1.1rem;
@@ -416,7 +418,7 @@ nav {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 1.5rem;
         margin-left: 0;
     }
 }
@@ -428,11 +430,13 @@ nav {
     /* margin-left: 1rem; */
     border-radius: 50px;
     padding: 10px 14px;
+    margin: 10px;
     text-decoration: none !important;
     list-style: none;
     font-size: 1.1rem;
     font-weight: 400;
 }
+
 
 .nav-list a:hover {
     background-color: var(--btn-bg-hover); 
@@ -443,17 +447,31 @@ nav {
     cursor: pointer;
 }
 
-.nav-list li:last-child {
-    /* background-color: var(--btn-primary-bg);  */
+.nav-list li:last-child a {
+    color: var(--btn-primary-outline-text);
+    border: 1px solid var(--btn-primary-bg);
+    border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    .nav-list li:last-child a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.nav-list li:last-child a:hover {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-outline-text-hover);
+}
+
+/* .nav-list li:last-child {
     color: var(--btn-text);
     border: 1px solid var(--btn-primary-bg);
-    /* margin-left: 1rem; */
     border-radius: 50px;
-    /* padding: 10px 14px; */
     text-decoration: none !important;
     font-size: 1.1rem;
     font-weight: 400;
-    /* margin-top: 1rem;  */
 }
 
 @media (max-width: 768px) {
@@ -461,7 +479,7 @@ nav {
         margin-left: 0;
         margin-top: 10px;
     }
-}
+} */
 
 .btn {
     background-color: var(--btn-primary-bg); 
