@@ -118,6 +118,7 @@ h2 {
     h2 {
         font-size: 1.8rem;
         line-height: 2rem;
+        text-align: center;
     }
 }
 
@@ -147,6 +148,7 @@ p {
     .big-text  {
         font-size: 1.5rem;
         line-height: 2.2rem;
+        text-align: center;
     }
 }
 
@@ -163,6 +165,7 @@ p {
     .mid-text  {
         font-size: 1.3rem;
         line-height: 2rem;
+        text-align: center;
     }
 }
 
@@ -205,13 +208,14 @@ p {
     font-size: 1.6rem;
     font-weight: 100;
     line-height: 1.8;
+    margin-left: 1rem;
 
 }
 
 @media (max-width: 768px) {
     .b-list  {
         font-size: 1.2rem;
-        line-height:1.4rem;
+        line-height: 2.2rem;
     }
 }
 
@@ -221,6 +225,12 @@ p {
     font-size: .9rem;
     color: var(--tertiary-text-color);
     letter-spacing: .09em;
+}
+
+@media (max-width: 768px) {
+    .subtitle {
+        text-align: center;
+    }
 }
 
 h4 {
@@ -411,9 +421,8 @@ nav {
 
 @media (max-width: 768px) {
     .sold-out-box {
-        flex-direction: column;
         justify-content: center;
-        text-align: center;
+        text-align: left;
         max-width: 100%;
     }
 }
@@ -546,6 +555,14 @@ nav {
 }
 
 /* Navigation / Links / Lists */
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: unset;
+}
 
 .nav-list {
     display: flex;
@@ -848,7 +865,7 @@ nav {
     gap: 20px;  
 }
 
-@media (max-width: 768px) {
+@media (max-width: 998.99px) {
     .schedule-container {
         flex-direction: column;
     }
