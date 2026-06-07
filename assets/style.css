@@ -677,6 +677,10 @@ a:visited {
     font-weight: 400;
 }
 
+.btn a {
+    color: var(--btn-text);
+}
+
 @media (max-width: 768px) {
     .btn {
         width: 100%;
